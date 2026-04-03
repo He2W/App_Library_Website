@@ -1,6 +1,8 @@
 // For carousel
 let items = document.querySelectorAll('.slider .item');
+let audioE = document.querySelector('.audioE');
 let active = 0;
+
 function loadShow() {
     items[active].style.transform = `none`;
     items[active].style.zIndex = 1;
@@ -29,11 +31,11 @@ let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 next.onclick = function () {
     active = active + 1 < items.length ? active + 1 : active;
+    if(audioE) audioE.play()
     loadShow();
 }
 prev.onclick = function () {
     active = active - 1 >= 0 ? active - 1 : active;
+    if(audioE) audioE.play()
     loadShow();
 }
-// For load data
-// For others

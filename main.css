@@ -18,7 +18,7 @@ body {
     align-items: center;
     opacity: 1;
 
-    animation: fade_in 2s;
+    animation: fade_in 2.5s;
 }
 
 .slider {
@@ -43,7 +43,7 @@ body {
     left: calc(50% - 110px);
     top: 0;
 
-    animation: zoom_out 1s;
+    animation: zoom_out 1.5s;
 }
 
 .item_image {
