@@ -65,7 +65,8 @@ body {
 
 #prev,
 #next {
-    color: #000000;
+    z-index: 999;
+    color: #fff;
     background: none;
     border: none;
     font-size: xxx-large;
