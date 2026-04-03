@@ -51,7 +51,7 @@ const get_data = () => {
                 class="item_image"
                 src=${element.imagePath}
                 alt="game image" />
-            <p>${element.description}</p>
+            <p>${element.description} ${element.link.includes('#') ? `<br /> <strong>Comming soon...</strong>` : ''}</p>
         </a>
     `
     });
